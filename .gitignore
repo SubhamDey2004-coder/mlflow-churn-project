@@ -1,5 +1,35 @@
+# Virtual environments
 .venv/
+venv/
+
+# Python cache
 __pycache__/
-*.pyc
-mlruns/
+*.py[cod]
+
+# Environment / secrets
 .env
+.env.*
+
+# MLflow local state
+mlruns/
+mlflow.db
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated datasets / artifacts
+data/raw/
+data/processed/
+models/
+artifacts/
+
+# Test / coverage output
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
